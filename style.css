@@ -1,6 +1,26 @@
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%; /* Define o cursor como um círculo */
+  pointer-events: none; /* Permite que o cursor interaja com os elementos */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.elemento {
+  width: 200px;
+  height: 100px;
+  background-color: lightgray;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer; /* Define o cursor como ponteiro ao passar sobre os elementos */
+}
 body {
   background: #801638;
 }
+
 body,
 body > * {
   margin: 0;
